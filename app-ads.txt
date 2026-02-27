@@ -1,0 +1,2 @@
+# AdMobのパブリッシャーIDを確認後、以下の行を有効化してください
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

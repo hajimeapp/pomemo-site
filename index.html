@@ -3,58 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー - ポめも</title>
+  <title>ポめも - ポイ活案件管理アプリ</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 24px 16px;
-      line-height: 1.8;
       color: #333;
       background: #fafafa;
+      line-height: 1.8;
     }
-    h1 { font-size: 1.5em; border-bottom: 2px solid #6750A4; padding-bottom: 8px; }
-    h2 { font-size: 1.15em; margin-top: 2em; color: #6750A4; }
-    ul { padding-left: 1.5em; }
-    li { margin-bottom: 0.4em; }
-    .updated { color: #888; font-size: 0.9em; margin-top: 2em; }
-    a { color: #6750A4; }
+    .hero {
+      background: linear-gradient(135deg, #6750A4, #9a82db);
+      color: #fff;
+      text-align: center;
+      padding: 60px 16px 48px;
+    }
+    .hero h1 {
+      font-size: 2.2em;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.1em;
+      opacity: 0.9;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 16px;
+    }
+    .features {
+      display: grid;
+      gap: 24px;
+      margin: 32px 0;
+    }
+    .feature {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .feature h3 {
+      color: #6750A4;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+    .feature p {
+      color: #555;
+      font-size: 0.95em;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin: 32px 0;
+      flex-wrap: wrap;
+    }
+    .badges a img {
+      height: 48px;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 16px;
+      color: #888;
+      font-size: 0.85em;
+      border-top: 1px solid #eee;
+    }
+    footer a {
+      color: #6750A4;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-<h1>プライバシーポリシー</h1>
-<p>「ポめも」（以下「本アプリ」）は、ポイントサイトの案件管理を目的とした個人開発アプリです。本プライバシーポリシーでは、本アプリにおける情報の取り扱いについて説明します。</p>
+<div class="hero">
+  <h1>ポめも</h1>
+  <p>ポイ活の案件をかんたん管理。進捗・ポイント・期限をまとめて記録できるアプリです。</p>
+</div>
 
-<h2>1. 収集する情報</h2>
-<p>本アプリは、ユーザーの個人情報（氏名、メールアドレス、電話番号等）を収集しません。</p>
-<p>ユーザーが本アプリ内で入力したデータ（案件名、ポイント情報、メモ等）は、すべてお使いの端末内にのみ保存され、外部サーバーへ送信されることはありません。</p>
+<div class="content">
+  <div class="features">
+    <div class="feature">
+      <h3>案件を一覧管理</h3>
+      <p>ポイントサイトの案件を登録して、ステータスや達成条件をまとめて管理できます。</p>
+    </div>
+    <div class="feature">
+      <h3>進捗メモ</h3>
+      <p>案件ごとに進捗メモを記録。どこまで進んだか一目でわかります。</p>
+    </div>
+    <div class="feature">
+      <h3>オフラインで完結</h3>
+      <p>すべてのデータは端末内に保存。アカウント登録もネット接続も不要です。</p>
+    </div>
+  </div>
 
-<h2>2. 広告について</h2>
-<p>本アプリでは、広告配信のために AppLovin MAX を利用しています。AppLovin は広告の最適化を目的として、デバイス識別子等の情報を収集する場合があります。</p>
-<p>iOS端末では、App Tracking Transparency（ATT）に基づき、トラッキングの許可をお尋ねします。許可しない場合でもアプリの全機能をご利用いただけます。</p>
-<p>AppLovinのプライバシーポリシー: <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">https://www.applovin.com/privacy/</a></p>
+  <!--
+  <div class="badges">
+    <a href="#"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp" alt="App Storeからダウンロード"></a>
+    <a href="#"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" alt="Google Playで手に入れよう"></a>
+  </div>
+  -->
+</div>
 
-<h2>3. 利用する外部サービス</h2>
-<ul>
-  <li><strong>AppLovin MAX</strong> - 広告配信</li>
-  <li><strong>Firebase</strong> - アプリの基盤サービス（分析機能は無効化しています）</li>
-  <li><strong>Apple iTunes Search API</strong> - アプリ検索機能（検索キーワードのみ送信、個人情報は含みません）</li>
-</ul>
-
-<h2>4. データの保存と削除</h2>
-<p>本アプリのデータはすべてお使いの端末内に保存されます。クラウドへの同期やバックアップは行いません。</p>
-<p>アプリを削除（アンインストール）することで、保存されたすべてのデータが完全に削除されます。</p>
-
-<h2>5. プライバシーポリシーの変更</h2>
-<p>本ポリシーは、必要に応じて変更される場合があります。重要な変更がある場合は、アプリ内でお知らせします。</p>
-
-<h2>6. お問い合わせ</h2>
-<p>本ポリシーに関するお問い合わせは、以下のフォームからお願いいたします。</p>
-<p><a href="https://forms.gle/CUU9UVeXVyLnwvLL7" target="_blank" rel="noopener">お問い合わせフォーム</a></p>
-
-<p class="updated">最終更新日: 2026年2月27日</p>
+<footer>
+  <p>
+    <a href="privacy.html">プライバシーポリシー</a> ・
+    <a href="https://forms.gle/CUU9UVeXVyLnwvLL7" target="_blank" rel="noopener">お問い合わせ</a>
+  </p>
+  <p style="margin-top: 8px;">&copy; 2026 ポめも</p>
+</footer>
 
 </body>
 </html>
